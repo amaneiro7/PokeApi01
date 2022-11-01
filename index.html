@@ -17,31 +17,55 @@
   <main class="flex">
     <article class="card">
       <img src="./img/bg-pattern-card.svg" alt="imagen header card" class="card-header">
+
       <div>
         <div class="card-body">
-           <img src="./img/image-victor.jpg" alt="Imagen de vitoko" class="card-body-img">
-           <h2 class="card-body-title">
-            Victor Crest 
-            <span>26</span> 
+           <img src="" alt="" class="card-body-img">
+           <h2 class="card-body-title">             
+            
           </h2>
-          <p class="card-body-city">London</p>
+          <p class="card-body-type"></p>
         </div>
         <div class="card-footer">
+          
+          <div class="card-footer-stats">
+            <div class="card-footer-social">
+              <h3 id="life"></h3>
+              <p>HP</p>
+            </div>
+            <div class="card-footer-social">
+              <h3 id="attack"></h3>
+              <p>Attack</p>
+            </div>
+            <div class="card-footer-social">
+              <h3 id="defense"></h3>
+              <p>Defense</p>
+            </div>            
+        </div>
+
+        <div class="card-footer-stats">
           <div class="card-footer-social">
-            <h3>80K</h3>
-            <p>Followers</p>
+            <h3 id="specialAttack"></h3>
+            <p>Special Attack</p>
           </div>
           <div class="card-footer-social">
-            <h3>803K</h3>
-            <p>Likes</p>
+            <h3 id="specialDefense"></h3>
+            <p>Special Defense</p>
           </div>
           <div class="card-footer-social">
-            <h3>1.4K</h3>
-            <p>Photos</p>
+            <h3 id="speed"></h3>
+            <p>Speed</p>
           </div>
+        </div>
+          
         </div>
       </div>
     </article>
+    <section class="btn-container">
+      <input type="text" placeholder="Insert Pokemon ID or Name" class="input">
+      <button type="button" class="btn btn-search">Search</button>
+      <button type="button" class="btn btn-random">Random</button>
+    </section>
   </main>
   <script src="./assets/main.js"></script>
 </body>

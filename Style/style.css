@@ -1,0 +1,108 @@
+/*# sourceMappingURL=style.css.map */
+
+:root {
+    /* Colores */
+    --dark-cyan: #19a2ae;
+    --very-dark-desaturated-blue: #2d3248;
+    --dark-grayish-blue: #6a6f81;
+    --dark-gray: hsl(0, 0%, 59%);
+
+
+    /* Fuentes */
+    --font-kumbh: 'Kumbh Sans', sans-serif;
+    --size-400:400;
+    --size-700:700;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+
+html {
+    font-size: 62.5%;   
+}
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {    
+    font-family: var(--font-kumbh);
+    background-color: var(--dark-cyan);
+    background-image: url('../img/bg-pattern-top.svg'), url('../img/bg-pattern-bottom.svg');
+    background-repeat: no-repeat, no-repeat;
+    background-position: right 50vw bottom 50vh, left 50vw top 50vh;
+}
+
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;    
+}
+
+.card {
+    background-color: white;
+    width: 326px;
+    border-radius: 16px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+    overflow: hidden;    
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+    position: relative;
+    margin-top: -50px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid lightgrey;
+}
+
+.card-body-img {
+    width: 105px;
+    height: 105px;
+    border-radius: 50%;
+    margin-bottom: 16px;
+    border: 5px solid white; 
+    background-color: white;
+}
+
+.card-body-title {
+    font-size: 1.8rem;
+    font-weight: var(--size-700);
+    margin-bottom: 6px;
+}
+
+.card-body-title span,
+.card-body-city {
+    font-weight: var(--size-400);
+    color: var(--dark-grayish-blue);
+}
+
+.card-footer {
+    height: 75px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex: space-between;    
+}
+
+.card-footer-social {
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: var(--size-400);
+}
+
+.card-footer-social p {
+    margin-top: 4px;
+    color: var(--dark-grayish-blue);
+}
+
+
+@media (max-width: 376px) {
+
+}
